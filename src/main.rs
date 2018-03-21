@@ -9,16 +9,16 @@ fn main() {
 	let mut out = String::new();
     
 	let mut f = File::open("first").expect("File not found");
-    let mut contents = String::new();
-    f.read_to_string(&mut contents).expect("Something went wrong");
+    	let mut contents = String::new();
+    	f.read_to_string(&mut contents).expect("Something went wrong");
 
 	let mut f2 = File::open("second").expect("File not found");
-    let mut contents2 = String::new();
-    f2.read_to_string(&mut contents2).expect("Something went wrong");
+    	let mut contents2 = String::new();
+    	f2.read_to_string(&mut contents2).expect("Something went wrong");
 
 	let mut f3 = File::open("third").expect("File not found");
-    let mut contents3 = String::new();
-    f3.read_to_string(&mut contents3).expect("Something went wrong");
+    	let mut contents3 = String::new();
+    	f3.read_to_string(&mut contents3).expect("Something went wrong");
 	
 	let first : Vec<&str> = contents.split(";").collect();
 	let second : Vec<&str> = contents2.split(";").collect();
